@@ -16,3 +16,12 @@ function getStudentName(studentID) {
 var nextStudent = getStudentName(73); //assigns 73 to the studentID
 
 console.log(nextStudent);
+
+function getStudentName() {
+    // assignment to an undeclared variable :(
+    nextStudent = "Suzy";
+}
+
+getStudentName();
+
+console.log(nextStudent);
