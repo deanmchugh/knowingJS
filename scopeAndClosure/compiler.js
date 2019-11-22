@@ -1,4 +1,4 @@
-var students = [
+var students = [                      //assignment operation
     { id: 14, name: "Kyle" },
     { id: 73, name: "Suzy" },
     { id: 112, name: "Frank" },
@@ -6,13 +6,13 @@ var students = [
 ];
 
 function getStudentName(studentID) {
-    for (let student of students) {
+    for (let student of students) {   //assignment operation
         if (student.id == studentID) {
             return student.name;
         }
     }
 }
 
-var nextStudent = getStudentName(73);
+var nextStudent = getStudentName(73); //assigns 73 to the studentID
 
 console.log(nextStudent);
