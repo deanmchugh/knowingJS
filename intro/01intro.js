@@ -1,4 +1,7 @@
+//JS is classified as an interprated scripting language but instead of being processed 
+// in a single top-down pass it is parsed/complied in a seperate phase before execution
 //delimit strings
+
 const delimitString = 'my name is dean'
 
 //interpolation
