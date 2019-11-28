@@ -57,4 +57,22 @@ var askQuestion = function() {
 //names function expression. ofTheTeacher is declared as a variable inside the function
 var askQuestion = function ofTheTeacher(){
     // ..
-};
+}
+
+//GLOBAL SCOPE
+
+(function outerScope(){
+    var moduleOne = (function one(){
+        // ..
+    })();
+
+    var moduleTwo = (function two(){
+        // ..
+
+        function callModuleOne() {
+            moduleOne.someMethod();
+        }
+
+        // ..
+    })();
+})();
