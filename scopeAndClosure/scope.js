@@ -60,6 +60,11 @@ var askQuestion = function ofTheTeacher(){
 }
 
 //GLOBAL SCOPE
+//node treats all .js files that it loads, including the main on you start with, as a module
+//to make a variable globle you need to add global to it 
+//eg.
+
+global.studentName = 'kyle'
 
 (function outerScope(){
     var moduleOne = (function one(){
