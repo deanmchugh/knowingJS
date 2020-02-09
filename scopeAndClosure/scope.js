@@ -64,7 +64,16 @@ var askQuestion = function ofTheTeacher(){
 //to make a variable globle you need to add global to it 
 //eg.
 
-global.studentName = 'kyle'
+global.studentName = "Kyle";
+
+function hello() {
+    console.log(`Hello, ${ studentName }!`);
+}
+
+hello();
+// Hello, Kyle!
+
+module.exports.hello = hello;
 
 (function outerScope(){
     var moduleOne = (function one(){
